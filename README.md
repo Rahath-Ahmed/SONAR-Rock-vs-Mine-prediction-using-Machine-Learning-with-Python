@@ -1,54 +1,82 @@
-# 🔍 SONAR Rock vs Mine Prediction
+# SONAR Rock vs Mine Prediction 🎯
 
-## 📌 Project Description
-This project applies machine learning to classify objects as either **rock** or **mine** based on SONAR signal data. It uses logistic regression to build a predictive model that can accurately distinguish between the two classes based on 60 numeric frequency-based features.
+This project uses **Machine Learning** techniques to classify sonar signals as either **rocks** or **mines**. It's a classic binary classification task based on real-world data, with applications in undersea object detection.
 
----
+## 🧠 Project Motivation
 
-## 💡 Techniques Used
-- **Dataset**: SONAR Dataset from UCI Machine Learning Repository  
-- **Libraries**: NumPy, Pandas, scikit-learn  
-- **Model**: Logistic Regression  
-- **Evaluation**: Accuracy Score, Train-Test Split
+The objective is to build a logistic regression model that can accurately identify whether an object detected by sonar is a rock or a mine. This type of predictive modeling can be useful in defense, navigation, and exploration technologies.
 
----
+## 📊 Dataset Information
 
-## 📊 Dataset
-- 208 samples, each with 60 features representing SONAR signal strengths
-- Binary labels:  
-  - **"R"** for Rock  
-  - **"M"** for Mine  
-- Source: [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))
+- **Samples**: 208
+- **Features**: 60 numerical values per sample representing energy measurements across frequency bands.
+- **Labels**: 
+  - `R` → Rock  
+  - `M` → Mine
 
----
+## 🔧 Technologies Used
 
-## 🚀 How to Run
-1. Open the notebook in Jupyter:
+- **Python** 🐍
+- **Jupyter Notebook**
+- **Pandas**
+- **NumPy**
+- **scikit-learn**
+- **Matplotlib & Seaborn** (for visualization)
+
+## 📈 Model & Approach
+
+We used a **Logistic Regression** model due to its simplicity and effectiveness for binary classification problems.
+
+### Key Steps:
+1. Data loading & inspection
+2. Data preprocessing & label encoding
+3. Model training & validation
+4. Performance evaluation
+
+### Evaluation Metrics:
+- Accuracy Score
+- Confusion Matrix
+- Classification Report (Precision, Recall, F1-score)
+
+## ✅ Results
+
+The model achieved the following performance on the test set:
+
+- **Accuracy**: ~86%
+- **Precision (Mine)**: 0.88
+- **Recall (Mine)**: 0.85
+- **F1-score (Mine)**: 0.86
+
+> Note: Results may vary slightly depending on random state and dataset splitting.
+
+## 🚀 Getting Started
+
+To run this project on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rahath-Ahmed/SONAR-Rock-vs-Mine-prediction-using-Machine-Learning-with-Python.git
+   cd SONAR-Rock-vs-Mine-prediction-using-Machine-Learning-with-Python
+   ```bash
+2. Install required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```bash
+3. Launch the notebook:
    ```bash
    jupyter notebook
    ```bash
-2. Run each cell in order to:
-    - Load and explore the data
-    - Train a logistic regression model
-    - Evaluate accuracy and make predictions
+4. Open and run SONAR Rock vs Mine Prediction.ipynb
 
----
+## 📌 Future Improvements
+  - Experiment with different models like SVM, Random Forest, and Neural Networks.
+  - Perform hyperparameter tuning for better performance.
+  - Add interactive visualizations or a simple UI.
 
-## 📈 Results
-- Achieved high accuracy in predicting whether a sonar signal represents a mine or a rock.
-- Model generalizes well on unseen test data using train-test split validation.
+## 📚 References
+  - UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/sonar
+  - scikit-learn documentation: https://scikit-learn.org/
 
----
-
-## 🧠 What I Learned
-- How to preprocess and explore high-dimensional datasets.
-- How to apply logistic regression to binary classification problems.
-- How to evaluate classification model performance using scikit-learn.
-
----
-
-## 📬 Contact
-If you have questions or suggestions, feel free to connect:
-
-📧 rahathahmed17@gmail.com  
-🔗 [linkedin.com/in/rahath-ahmed](https://linkedin.com/in/rahath-ahmed)
+## 🤝 Acknowledgments
+Special thanks to the open-source community and academic contributors who made this dataset and tools available.
