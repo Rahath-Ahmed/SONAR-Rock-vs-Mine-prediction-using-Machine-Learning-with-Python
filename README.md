@@ -26,7 +26,7 @@ This project applies machine learning to classify objects as either **rock** or 
 1. Open the notebook in Jupyter:
    ```bash
    jupyter notebook
-  ````bash
+   ```bash
 2. Run each cell in order to:
   - Load and explore the data
   - Train a logistic regression model
