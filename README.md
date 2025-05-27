@@ -26,3 +26,29 @@ This project applies machine learning to classify objects as either **rock** or 
 1. Open the notebook in Jupyter:
    ```bash
    jupyter notebook
+  ````bash
+2. Run each cell in order to:
+  - Load and explore the data
+  - Train a logistic regression model
+  - Evaluate accuracy and make predictions
+
+---
+
+## 📈 Results
+- Achieved high accuracy in predicting whether a sonar signal represents a mine or a rock.
+- Model generalizes well on unseen test data using train-test split validation.
+
+---
+
+## 🧠 What I Learned
+- How to preprocess and explore high-dimensional datasets.
+- How to apply logistic regression to binary classification problems.
+- How to evaluate classification model performance using scikit-learn.
+
+---
+
+## 📬 Contact
+If you have questions or suggestions, feel free to connect:
+
+📧 rahathahmed17@gmail.com  
+🔗 [linkedin.com/in/rahath-ahmed](https://linkedin.com/in/rahath-ahmed)
