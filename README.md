@@ -1,82 +1,86 @@
 # SONAR Rock vs Mine Prediction 🎯
 
-This project uses **Machine Learning** techniques to classify sonar signals as either **rocks** or **mines**. It's a classic binary classification task based on real-world data, with applications in undersea object detection.
+This is a beginner-friendly machine learning project that uses **Logistic Regression** to classify SONAR signals as either **rocks** or **mines** using a dataset from the UCI Machine Learning Repository. It’s a classic binary classification problem that's great for practicing data preprocessing, model building, and evaluation.
 
-## 🧠 Project Motivation
+---
 
-The objective is to build a logistic regression model that can accurately identify whether an object detected by sonar is a rock or a mine. This type of predictive modeling can be useful in defense, navigation, and exploration technologies.
+## 📌 Problem Statement
 
-## 📊 Dataset Information
+The goal is to develop a model that can distinguish between SONAR signals bounced off a rock and those bounced off a metal cylinder (mine), using 60 numerical features recorded per signal.
 
-- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))
-- **Samples**: 208
-- **Features**: 60 numerical values per sample representing energy measurements across frequency bands.
-- **Labels**: 
-  - `R` → Rock  
-  - `M` → Mine
+---
 
-## 🔧 Technologies Used
+## 📊 Dataset Description
 
-- **Python** 🐍
-- **Jupyter Notebook**
-- **Pandas**
-- **NumPy**
-- **scikit-learn**
-- **Matplotlib & Seaborn** (for visualization)
+- **Source**: UCI Machine Learning Repository  
+- **Instances**: 208 samples  
+- **Features**: 60 numerical attributes per sample  
+- **Target Labels**:  
+  - `M` → Mine  
+  - `R` → Rock
 
-## 📈 Model & Approach
+---
 
-We used a **Logistic Regression** model due to its simplicity and effectiveness for binary classification problems.
+## 🧰 Tools & Libraries Used
 
-### Key Steps:
-1. Data loading & inspection
-2. Data preprocessing & label encoding
-3. Model training & validation
-4. Performance evaluation
+- Python
+- Pandas  
+- NumPy  
+- Scikit-learn  
 
-### Evaluation Metrics:
-- Accuracy Score
-- Confusion Matrix
-- Classification Report (Precision, Recall, F1-score)
+---
+
+## 🚀 Workflow
+
+1. **Import Dependencies**
+2. **Load the Dataset**
+3. **Data Exploration**
+   - View shape and statistics
+   - Check label distribution
+4. **Preprocessing**
+   - Feature/label separation
+   - Train-test split
+5. **Model Training**
+   - Logistic Regression
+6. **Model Evaluation**
+   - Accuracy on both training and test data
+7. **Prediction System**
+   - Manual testing using NumPy arrays
+
+---
 
 ## ✅ Results
 
-The model achieved the following performance on the test set:
+The model performs reasonably well using Logistic Regression:
 
-- **Accuracy**: ~86%
-- **Precision (Mine)**: 0.88
-- **Recall (Mine)**: 0.85
-- **F1-score (Mine)**: 0.86
+- Accuracy on **training data**: ~83%  
+- Accuracy on **test data**: ~78%  
 
-> Note: Results may vary slightly depending on random state and dataset splitting.
+> Note: Results may vary slightly depending on random state and train-test split.
 
-## 🚀 Getting Started
+---
 
-To run this project on your local machine:
+## ▶️ How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Rahath-Ahmed/SONAR-Rock-vs-Mine-prediction-using-Machine-Learning-with-Python.git
-   cd SONAR-Rock-vs-Mine-prediction-using-Machine-Learning-with-Python
-   ```bash
-2. Install required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```bash
-3. Launch the notebook:
-   ```bash
-   jupyter notebook
-   ```bash
-4. Open and run SONAR Rock vs Mine Prediction.ipynb
+1. Clone this repository or download the notebook.
+2. Ensure the dataset is correctly linked in your environment.
+3. Run the notebook step-by-step in **Jupyter Notebook** or **Google Colab**.
 
-## 📌 Future Improvements
-  - Experiment with different models like SVM, Random Forest, and Neural Networks.
-  - Perform hyperparameter tuning for better performance.
-  - Add interactive visualizations or a simple UI.
+📁 **Dataset link**: [Download Sonar Data](https://drive.google.com/file/d/1Tuq_EzLyVneiju99IzPi2hFyYFohfymV/view?usp=drive_link)
 
-## 📚 References
-  - UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/sonar
-  - scikit-learn documentation: https://scikit-learn.org/
+> Update the file path in the notebook to match your environment.
 
-## 🤝 Acknowledgments
-Special thanks to the open-source community and academic contributors who made this dataset and tools available.
+---
+
+## 📈 Future Enhancements
+
+- Try other classification models like SVM, Random Forest, or Gradient Boosting  
+- Add visualizations for better feature and result analysis  
+
+---
+
+## 🙏 Acknowledgments
+
+- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))  
+- The open-source Python and Scikit-learn community
+
