@@ -28,9 +28,9 @@ This project applies machine learning to classify objects as either **rock** or 
    jupyter notebook
    ```bash
 2. Run each cell in order to:
-  - Load and explore the data
-  - Train a logistic regression model
-  - Evaluate accuracy and make predictions
+    - Load and explore the data
+    - Train a logistic regression model
+    - Evaluate accuracy and make predictions
 
 ---
 
